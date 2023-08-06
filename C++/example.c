@@ -1,6 +1,6 @@
 #include <node_api.h>
 
-static napi_value add(napi_env env, napi_callback_info info) {
+napi_value add(napi_env env, napi_callback_info info) {
   size_t argc = 2;
   napi_value args[2];
   napi_get_cb_info(env, info, &argc, args, NULL, NULL);
@@ -14,12 +14,10 @@ static napi_value add(napi_env env, napi_callback_info info) {
   return sum;
 }
 
-#define DECLARE_NAPI_METHOD(name, func) \
-  { name, 0, func, 0, 0, 0, napi_default, 0 }
-
 napi_value init(napi_env env, napi_value exports) {
-  napi_property_descriptor addMethod = DECLARE_NAPI_METHOD("add", add);
-  napi_define_properties(env, exports, 1, &addMethod);
+  napi_value fn;
+  napi_create_function(env, 0, 0, add, 0, &fn);
+  napi_set_named_property(env, exports, "add", fn);
   return exports;
 }
 
