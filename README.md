@@ -1,4 +1,4 @@
 # Node-API (N-API)
 
-- C++ addon example
-- Rust addon example
+- [C++ addon example](./C++)
+- [Rust addon example](./Rust)

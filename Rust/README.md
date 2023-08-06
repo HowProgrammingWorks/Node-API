@@ -1,7 +1,7 @@
 # Rust addon with napi-rs for Node.js
 
 - Install rust
-For fedora:
+  - For fedora:
 ```
 sudo dnf install rust cargo
 ```
