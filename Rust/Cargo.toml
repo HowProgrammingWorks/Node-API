@@ -9,7 +9,7 @@ repository = "https://github.com/HowProgrammingWorks/WebAssembly"
 crate-type = ["cdylib"]
 
 [dependencies]
-napi = "2"
+napi = { version = "2", features = ["async"] }
 napi-derive = "2"
 
 [build-dependencies]
