@@ -1,0 +1,13 @@
+{
+  "package": "example",
+  "devDependencies": {
+    "@napi-rs/cli": "^2.16.2"
+  },
+  "napi": {
+    "name": "example"
+  },
+  "scripts": {
+    "build": "napi build --release",
+    "build:debug": "napi build"
+  }
+}

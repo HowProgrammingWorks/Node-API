@@ -2,3 +2,6 @@ node_modules
 *.log
 .DS_Store
 C++/build
+*.node
+Rust/target
+Rust/index.d.ts
