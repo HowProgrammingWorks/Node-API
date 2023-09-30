@@ -1,5 +1,8 @@
 {
   "package": "example",
+  "engines": {
+    "node": "18 || 20"
+  },
   "devDependencies": {
     "@napi-rs/cli": "^2.16.2"
   },
