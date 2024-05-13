@@ -1,10 +1,10 @@
 {
   "package": "example",
   "engines": {
-    "node": "18 || 20"
+    "node": "18 || 20 || 21"
   },
   "devDependencies": {
-    "@napi-rs/cli": "^2.16.2"
+    "@napi-rs/cli": "^2.18.3"
   },
   "napi": {
     "name": "example"
